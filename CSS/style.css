@@ -7,7 +7,7 @@
 }
 :root{
     /*-------------font family------------*/
-    --ff-primary: "Roboto", sans-serif;
+    --ff-primary: "Reboto", sans-serif;
     --ff-secondary: "Inter", sans-serif;
     --ff-design: "Satisfy", cursive;
     --ff-brand: "Margarine",sans-serif;
@@ -265,7 +265,7 @@ body{
 .banner-btn:hover{
     outline: 3px solid var(--clr-red);
     outline-offset: 4px;
-    background-color: var(--clr-primary);
+    
     
 }
 
@@ -277,6 +277,7 @@ body{
 .features{
     background-color: var(--clr-grey-3);
     cursor: pointer;
+    
 }
 
 .feature{
@@ -295,18 +296,19 @@ body{
 }
 .feature-text{
     color:var(--clr-grey-2);
-    max-width: 15rem;
-    margin-top: 0;
+    max-width: 17rem;
+    /* margin-top: 0;
     margin-bottom: 0;
     margin-right: auto;
-    margin-left: auto;
-    /* margin:0 auto; *//* இந்த மாதிரியும் போடலாம் margin(top,bottom=0 and left,right=auto) content center-ல கொண்டு வர*/
+    margin-left: auto; */
+    margin:0 auto;/* இந்த மாதிரியும் போடலாம் margin(top,bottom=0 and left,right=auto) content center-ல கொண்டு வர*/
 }
 .feature:hover{
     background-color: var(--clr-white);
     box-shadow:0 2px var(--clr-primary-light);
+   
 }
-.feature:hover .feature-title:hover{
+.feature:hover .feature-title{
     color: var(--clr-primary-light);
 }
 .feature:hover .feature-icon svg{
@@ -318,10 +320,12 @@ body{
     .feature{
         width: 50%;
         float: left;/* next colum add */
+       
     }
+    
 }
 
-@media  screen and (min-width: 1100px) {
+@media  screen and (min-width: 950px) {
     .feature{
         width: 25%;
        
@@ -338,7 +342,7 @@ body{
     max-width: 30rem;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);/*about-picture box-shadow and alpha-0.2 blur-க்கான thickness*/
     border-radius: 5px;
-    overflow: hidden;/* picture curve */
+    overflow: hidden;/* picture hidden */
 }
 .about-picture{
     transition: var(--transition);
